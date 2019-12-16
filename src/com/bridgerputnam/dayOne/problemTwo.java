@@ -1,5 +1,7 @@
 package com.bridgerputnam.dayOne;
 
+import com.bridgerputnam.InputReader;
+
 import java.util.List;
 
 import static com.bridgerputnam.dayOne.problemOne.massToFuelCost;
@@ -21,7 +23,7 @@ public class problemTwo {
     }
 
     public static int solution() {
-        List<Integer> input = problemOneInput.getInput();
+        List<Integer> input = InputReader.inputToIntList("dayOne/dayOneInput.txt");
         return calcTotalFuelRequirements(input);
     }
 }

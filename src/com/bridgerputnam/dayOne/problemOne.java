@@ -1,5 +1,7 @@
 package com.bridgerputnam.dayOne;
 
+import com.bridgerputnam.InputReader;
+
 import java.util.List;
 
 public class problemOne {
@@ -17,7 +19,7 @@ public class problemOne {
     }
 
     public static int solution() {
-        List<Integer> input = problemOneInput.getInput();
+        List<Integer> input = InputReader.inputToIntList("dayOne/dayOneInput.txt");
         return modulesToFuelCost(input);
     }
 }
